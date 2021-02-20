@@ -8,7 +8,7 @@ using Eliason.Scrollbar.Native;
 
 namespace Eliason.Scrollbar
 {
-    public abstract class AdvScrollbarBase : Control, IDisposable
+    public abstract class AdvScrollbarBase : Control
     {
         protected Rectangle arrow1;
         private bool _arrow1Down;
@@ -21,7 +21,7 @@ namespace Eliason.Scrollbar
         private SafeHandleGDI _hbitmapThumb, _hbitmapThumbHot, _hbitmapThumbPressed;
         private SafeHandleGDI _hbitmapTrack, _hbitmapTrackHot, _hbitmapTrackPressed;
         private int _maximumBase;
-        private int _maximumPadding;
+        
         private int _scrollingStartPosition;
         private int _scrollingStartValue;
         protected Rectangle thumb;
